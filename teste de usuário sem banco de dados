@@ -1,0 +1,20 @@
+class Usuario{
+  String? usuario;
+  String? senha;
+  
+  void autenticar(){
+    var usuario = "Victor";
+    var senha = "123456";
+    if (this.usuario == usuario && this.senha == senha){
+      print("Usuario Autenticado");
+    }else{
+      print("Usúario não autenticado");
+    }
+  }
+}
+void main(){
+  Usuario usuario = new Usuario();
+  usuario.usuario = "Victor";
+  usuario.senha = "123456";
+  usuario.autenticar();
+}
