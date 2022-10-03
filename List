@@ -1,0 +1,43 @@
+/*Collection ou coleções -> São implemtntações
+ *  de estruturas de dados, que é utilizado
+ * para armazenar itens
+ * -List
+ * -Maps
+ */
+
+class Usuario{
+  
+  String nome;
+  int? idade;
+  
+  Usuario(this.nome, this.idade);
+}
+
+void main(){
+  List<String> fruta =["Tanja", "Uva", "Banana", "Pitaia"];
+  List<int> numero =[21, 45, 2, 5, 6];
+  List variados =["Victor", 21, 1994, 1.70];
+  
+  //adicionar fruta
+ fruta.add("melancia");
+  
+  //inserir em uma posição
+ fruta.insert(2, "manga");
+  
+  //remover item
+ fruta.removeAt(0);
+  
+  //Verificar item na lista
+ print(fruta.contains("Uva"));
+  
+  //tamanho da lista
+ print(fruta.length);
+  
+
+  
+  
+  //prints
+  print(fruta);
+  print(variados);
+  print(numero);
+}
