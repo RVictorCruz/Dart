@@ -1,0 +1,26 @@
+/*Mixins é uma maneira de utilizar códigos em
+ * multiplas hierarquias de classe*/
+
+
+mixin Escrita{
+  void escreverCodigo(){
+    print("Escrever um código para o seu programa");
+  }
+}
+abstract class Cidadao{
+  void direitoseDeveres(){
+    print("Todo cidadão tem direito e deveres");
+  }
+ }
+
+class Victor extends Cidadao with Escrita //with faz parte do mixin
+  {
+ 
+}
+void main(){
+  Victor victor = Victor();
+  print("-------------------------------------------");
+  victor.direitoseDeveres();
+  victor.escreverCodigo();
+  
+}
