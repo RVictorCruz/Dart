@@ -1,0 +1,8 @@
+void main(){
+  List<String> fruta =["Tanja", "Uva", "Banana", "Pitaia"];
+  for(int iten=0; iten<4; iten++){
+    print(fruta[iten]);
+  }
+  
+  print(fruta[1]);
+}
