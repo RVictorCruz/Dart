@@ -1,0 +1,45 @@
+/*Interface é utilizada pois podemos ter muitos
+ * objetos(classes) que podem possuir a mesma
+ * ação (métodos), porém podem executá-las de 
+ * maneiras diferentes*/
+abstract class Presidenciavel { //Interface
+  void participarEleicao();
+    }
+abstract class Programador { //Interface
+  void escreverCodigo();
+}
+abstract class Cidadao{
+  void diretoseDeveres(){
+    print("Todo cidadão tem direito e deveres");
+  }
+ }
+class Obama extends Cidadao
+  implements Presidenciavel, Programador{ //Interface(Classe) presidenciavel é implementada em obama
+  @override
+  void participarEleicao(){
+    print("Eleição nos Estados unidos para o Obama");
+  }
+  @override
+  void escreverCodigo(){
+    print("Obama não é programador e sim presidenciavel");
+  }
+}
+class Victor extends Cidadao
+  implements Programador{
+  @override
+  void escreverCodigo (){
+    print("Escrevendo código em dart");
+  }
+}
+void main(){
+  Obama obama = Obama();
+  Victor victor = Victor();
+  
+  obama.diretoseDeveres();
+  obama.participarEleicao();
+  obama.escreverCodigo();
+  print("-------------------------------------------");
+  victor.diretoseDeveres();
+  victor.escreverCodigo();
+  
+}
