@@ -4,17 +4,17 @@ void main() {
   
   
   //Chave -> valor
- // Map frutas = Map();
- // frutas["MO"] = "Morango";
- // frutas["MA"] = "Manga";
- // frutas[1] = "Jaca";
- // frutas[21]= "Kiwi";
- // print(frutas["MA"]);
- // print(frutas);
+  var frutas = <dynamic, String>{};
+  frutas["MO"] = "Morango";
+  frutas["MA"] = "Manga";
+  frutas[1] = "Jaca";
+  frutas[21]= "Kiwi";
+  print(frutas["MA"]);
+  print(frutas);
   
   
   //chave -> valor
-  Map<String, String> estados = Map();
+  var estados = <String, String>{};
   estados["SP"] = "São Paulo";
   estados["MA"] = "Maranhão";
   estados["CE"] = "Ceará";
