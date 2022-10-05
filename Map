@@ -1,0 +1,42 @@
+void main() {
+  //List fruta = ["Laranja", "Uva"];
+  //print(fruta[1]);
+  
+  
+  //Chave -> valor
+ // Map frutas = Map();
+ // frutas["MO"] = "Morango";
+ // frutas["MA"] = "Manga";
+ // frutas[1] = "Jaca";
+ // frutas[21]= "Kiwi";
+ // print(frutas["MA"]);
+ // print(frutas);
+  
+  
+  //chave -> valor
+  Map<String, String> estados = Map();
+  estados["SP"] = "São Paulo";
+  estados["MA"] = "Maranhão";
+  estados["CE"] = "Ceará";
+  estados["PA"] = "Pará";
+  
+  //Recuperar as chaves ex: "MA"
+  print(estados.keys);
+  
+  //Recuperar os valores ex: "Maranhão"
+  print(estados.values);
+  
+  //Verificar se a chave(key) ou valor(values) existem
+  print(estados.containsKey("MA"));
+  print(estados.containsValue("Maranhão"));
+  
+  //Verificar quantos itens tem na lista
+  print(estados.length);
+    
+  //Percorrer a lista
+    estados.forEach(
+    (keys, valor) => print("$keys - $valor")
+  );
+  
+  print(estados["MA"]);
+}
