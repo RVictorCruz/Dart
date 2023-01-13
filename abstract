@@ -1,0 +1,45 @@
+/*È definido para aquelas classes que contêm
+ * uma ou mais métodos abstratos(sem implementação)neles, 
+ * ou seja não podem ser instanciadas por outras, são acessadas
+ * apenas por herança.
+ * */ 
+abstract class Animal{
+  //atributo
+  String? cor;
+  
+  //Método
+  void correr(){
+    print("Corre garoto!!");
+  }
+  /*Caso não determine os parâmentros do método na classe pai, é obrigatório
+  *fazer isso na classe filha*/
+  void saltar(); 
+}
+class Cao extends Animal{
+  //Método
+  void latir (){
+    print("Late garoto!!!");
+  }
+  @override //sobreescrevendo
+  void saltar(){
+    print("O Cachorro salta!!!");
+  }
+}
+class Passaro extends Animal {
+  //método
+  void voar (){
+    print("Voa passarinho!!!");
+  }
+  @override //Sobreescrevendo
+  void saltar(){
+    print("Salte entre os ganhos passarinho!!!");
+  }
+}
+void main(){
+  //instância
+  Cao cao = Cao();
+  cao.latir();
+  cao.correr();
+  cao.saltar();
+  
+}

@@ -1,0 +1,26 @@
+class Animal { 
+  String? cor;
+  void dormir(){
+    print("Dormir");
+  }
+}
+  
+// Herda da primeira classe
+class Cao extends Animal{ 
+//   Não é necessário override
+}
+class Passaro extends Animal{ 
+//   Não é necessário override
+}
+  
+void main(){ 
+  Cao cao = Cao();
+  Passaro passaro = Passaro();
+  
+  cao.cor = "Branco";
+  print(cao.cor);
+  
+  passaro.cor = "Preto";
+  print(passaro.cor);
+    
+}

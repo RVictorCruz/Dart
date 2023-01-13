@@ -1,0 +1,29 @@
+class Configuracoes {
+  //Atributos
+  static String identificadorApp = "ADF454SDFAGH";
+  static String notificacaoSom = "sim";
+  //Metodo
+  static void notificacaoInicial(){
+    print("Executa Configurações iniciais");
+  }
+}
+class Conta{
+  String? valor;
+}
+void main (){
+  
+  //Instância
+  //Configuracoes config = Configuracoes();
+  
+  // Modificadores Static
+  Configuracoes.notificacaoInicial();
+  print(Configuracoes.identificadorApp);
+   print(Configuracoes.notificacaoSom);
+  
+  //Modificador final
+  final Conta conta = Conta(); /*Ao usar o modificador final é impossível instância a classe novamente*/
+  conta.valor = "Victor";
+  //conta = Conta(); /*Ao tentar instância novamente aparecerá*/
+  /*uma mensagem de erro, se existir o modificador final*/
+  print(conta.valor);
+}

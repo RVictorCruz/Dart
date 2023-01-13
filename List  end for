@@ -1,0 +1,36 @@
+/*Collection ou coleções -> São implemtntações
+ *  de estruturas de dados, que é utilizado
+ * para armazenar itens
+ * -List
+ * -Maps
+ */
+
+ class Usuario{
+  
+  String nome;
+  int? idade;
+  
+  Usuario(this.nome, this.idade);
+}
+
+void main(){
+  
+  //Armazenar objetos
+  //Duas formas de conseguir criar uma lista e instância uma classe
+  
+  final usuarios = <Usuario>[];     //1º opção
+  //List<Usuario> usuarios = [];    //2º opção
+  
+  usuarios.add(Usuario("Luis", 28));
+  usuarios.add(Usuario("Anderson", 21));
+  usuarios.add(Usuario("Anderson1", 25));
+  usuarios.add(Usuario("Anderson2", 20));
+  usuarios.add(Usuario("Anderson3", 23));
+
+ 
+  for (Usuario usuarios in usuarios){
+    print("Nome: ${usuarios.nome}| idade: ${usuarios.idade}");
+  }
+  
+ 
+}

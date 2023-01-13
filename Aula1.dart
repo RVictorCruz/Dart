@@ -5,8 +5,3 @@ void calcularMedia(double prova){
   }
 }
 
-
-
-void main(){
-  calcularMedia(10);
-}
